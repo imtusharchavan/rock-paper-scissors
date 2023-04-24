@@ -5,11 +5,11 @@ function getComputerChoice() {
 }
 
 
-playerSelection = getComputerChoice(); 
-computerSelection = getComputerChoice();
+const playerSelection = "Rock"; 
+const computerSelection = getComputerChoice();
 
 
-function singleRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return "Tie!";
   } else if (playerSelection === "Rock" && computerSelection === "Paper") {
@@ -28,4 +28,4 @@ function singleRound(playerSelection, computerSelection) {
 }
 
 
-console.log(singleRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
